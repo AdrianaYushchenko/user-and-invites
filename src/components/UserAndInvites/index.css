@@ -1,8 +1,17 @@
+h4 {
+  margin: 0;
+}
+
+p {
+  color: #3e4959;
+}
+
 .container {
   background-color: #fafafd;
   padding: 16px;
   font-size: 13px;
   font-weight: 600;
+  height: 100vh;
 }
 
 .section-container:first-child {
@@ -24,10 +33,6 @@
   padding: 0 16px;
   border-radius: 24px;
   box-shadow: 0 3px 24px 0 #828b970f;
-}
-
-p {
-  color: #3e4959;
 }
 
 .phone {

@@ -15,7 +15,7 @@ export const Section = ({ title, items, invites, image }: SectionProps) => {
     <div className="section-container">
       <div className="section-title">
         <img src={image} alt={image.toString()} />
-        <div className="title">{title}</div>
+        <h4 className="title">{title}</h4>
       </div>
       <div className="section-body">
         {items?.map((item) => {
@@ -31,7 +31,7 @@ export const Section = ({ title, items, invites, image }: SectionProps) => {
                   : `${item.user.name} ${item.user.lastName}`}
               </p>
               <div className="status-container">
-                {isInvite && <div className="status">{item.status}</div>}
+                {isInvite && <p className="status">{item.status}</p>}
                 <img src={ChevronRight} alt="ChevronRight" />
               </div>
             </a>
